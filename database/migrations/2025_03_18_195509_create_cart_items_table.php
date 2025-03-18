@@ -15,6 +15,15 @@ return new class extends Migration
             $table->id();
             $table->integer('quantify');
             $table->timestamps();
+
+
+            //primera con product
+            $table->unsignedBigInteger("product_id");
+            $table->foreign("product_id")->references("id")->on("products");
+
+            //foreing key users
+            $table->unsignedBigInteger("user_id");
+            $table->foreign("user_id")->references("id")->on("users");
         });
     }
 
