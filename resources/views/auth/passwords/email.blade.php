@@ -4,7 +4,7 @@
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
-            <div class="card">
+            <div class="form-container">
                 <div class="card-header">{{ __('Reset Password') }}</div>
 
                 <div class="card-body">
@@ -44,4 +44,39 @@
         </div>
     </div>
 </div>
+
+<style>
+    .form-container {
+        background-color: #ffffff;
+        padding: 2rem;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    .btn-primary {
+        background-color: #fcb900;
+        border-color: #fcb900;
+        color: #000;
+    }
+    .btn-primary:hover {
+        background-color: #e0a800;
+        border-color: #e0a800;
+    }
+    .card-header {
+        padding: 1rem 2rem;
+        background-color: #f8f9fa;
+        border-bottom: 1px solid #eee;
+        font-weight: bold;
+    }
+    .card-body {
+        padding: 2rem;
+    }
+    .alert-success {
+        background-color: #d4edda;
+        border-color: #c3e6cb;
+        color: #155724;
+        padding: 0.75rem 1.25rem;
+        margin-bottom: 1rem;
+        border-radius: 0.25rem;
+    }
+</style>
 @endsection
